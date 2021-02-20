@@ -27,6 +27,8 @@ set clipboard=unnamedplus
 "Lets
 let mapleader=" "
 let g:airline_theme = 'nord_minimal'
+let g:coc_snippet_next = '<tab>'
+let g:coc_snippet_prev = '<s-tab>'
 
 "Imaps
 imap <C-f> <Plug>(coc-snippets-expand)
