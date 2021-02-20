@@ -82,3 +82,15 @@ highlight clear SignColumn
 highlight clear TabLineFill
 highlight clear VertSplit
 highlight clear Tabline
+
+"Coc
+let g:coc_global_extensions = [
+      \'coc-tsserver',
+      \'coc-python',
+      \'coc-json',
+      \'coc-clangd',
+      \'coc-terminal',
+      \'coc-snippets',
+      \]
+
+
