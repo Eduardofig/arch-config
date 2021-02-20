@@ -29,6 +29,7 @@ let mapleader=" "
 let g:airline_theme = 'nord_minimal'
 
 "Imaps
+imap <C-f> <Plug>(coc-snippets-expand)
 inoremap <C-j> <C-n>
 inoremap <C-k> <C-p>
 
@@ -56,6 +57,7 @@ map <leader>l :wincmd l<CR>
 "Plugins
 call plug#begin('~/.vim/plugged')
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'junegunn/seoul256.vim'
 Plug 'gruvbox-community/gruvbox'
 Plug 'arcticicestudio/nord-vim'
 Plug 'jiangmiao/auto-pairs'
@@ -78,17 +80,3 @@ highlight clear SignColumn
 highlight clear TabLineFill
 highlight clear VertSplit
 highlight clear Tabline
-
-"coc-snippets
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? coc#_select_confirm() :
-      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-let g:coc_snippet_next = '<tab>'
