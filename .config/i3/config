@@ -5,7 +5,7 @@
 #exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id polybar example
 exec_always --no-startup-id autotiling
-exec_always feh --bg-fill /home/duzinho039/linux-config/Walpapers/'wallpaper 2.jpeg'
+exec_always feh --bg-fill /home/duzinho039/arch-config/Walpapers/'wallpaper 2.jpeg'
 exec_always picom -f
 #
 # #---Basic Definitions---# #
