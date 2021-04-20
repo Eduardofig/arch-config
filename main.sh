@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "starting"
-sudo apt install neovim kitty xcape x11-xserver-utils fish npm clangd feh
+sudo apt install neovim kitty xcape x11-xserver-utils fish npm clangd
 mv ~/.config .config.old
 mv ~/arch-config/.config .config
 setxkbmap -option ctrl:nocaps
@@ -14,7 +14,6 @@ xset -dpms
 xset r rate 210 40
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-feh --bg-scale ~/arch-config/Walpapers/wallpaper 3.jpeg
 git config --global user.email "duzinho039@gmail.com"
 git config --global user.name "Eduardofig"
 echo "done"
