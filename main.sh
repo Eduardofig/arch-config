@@ -3,8 +3,6 @@ echo "starting"
 sudo apt install neovim kitty xcape x11-xserver-utils fish npm clangd
 mv ~/.config ~/.config.old
 mv .config ~/.config
-setxkbmap -option ctrl:nocaps
-xcape -e 'Control_L=Escape'
 xset s off
 xset -dpms
 xset r rate 210 40
