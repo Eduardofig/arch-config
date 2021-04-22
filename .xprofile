@@ -2,7 +2,8 @@ setxkbmap -option ctrl:nocaps
 xcape -e 'Control_L=Escape'
 xset s off
 xset -dpms
-xset r rate 210 40setxkbmap -option ctrl:nocaps
+xset r rate 210 40
+setxkbmap -option ctrl:nocaps
 xcape -e 'Control_L=Escape'
 xset s off
 xset -dpms
