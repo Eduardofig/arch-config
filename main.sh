@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "starting"
-sudo apt install neovim kitty xcape x11-xserver-utils fish npm clangd
+sudo apt install neovim kitty xcape x11-xserver-utils fish npm clangd -y
 mv ~/.config ~/.config.old
 mv .config ~/.config
 xset s off
