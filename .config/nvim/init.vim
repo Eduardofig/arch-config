@@ -60,7 +60,7 @@ map <leader>l :wincmd l<CR>
 
 "Plugins
 call plug#begin('~/.vim/plugged')
-Plug 'nvim-telescope/telescope.nvim'
+"Plug 'nvim-telescope/telescope.nvim'
 Plug 'junegunn/seoul256.vim'
 Plug 'gruvbox-community/gruvbox'
 Plug 'arcticicestudio/nord-vim'
