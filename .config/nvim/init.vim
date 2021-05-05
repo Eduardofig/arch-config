@@ -33,6 +33,7 @@ let g:coc_snippet_prev = '<s-tab>'
 "Imaps
 imap <C-f> <Plug>(coc-snippets-expand)
 imap <C-l> <Esc>viw~ea
+imap <C-o> <Esc>A;<CR>
 inoremap <C-j> <C-n>
 inoremap <C-k> <C-p>
 
