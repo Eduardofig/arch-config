@@ -52,7 +52,7 @@ nmap J gt
 nmap K gT
 nmap <leader>gd :call CocAction('jumpDefinition', 'split')<CR>
 nmap <leader>gv :call CocAction('jumpDefinition', 'vsplit')<CR>
-nnoremap <leader>do :call <SID>show_documentation()<CR>
+nnoremap <leader>do :call CocAction('doHover')<CR>
 
 "Maps
 map <leader>h :wincmd h<CR>
