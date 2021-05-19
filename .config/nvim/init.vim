@@ -68,7 +68,7 @@ Plug 'gruvbox-community/gruvbox'
 Plug 'arcticicestudio/nord-vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim'
 Plug 'honza/vim-snippets'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
