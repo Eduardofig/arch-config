@@ -52,6 +52,7 @@ nmap J gt
 nmap K gT
 nmap <leader>gd :call CocAction('jumpDefinition', 'split')<CR>
 nmap <leader>gv :call CocAction('jumpDefinition', 'vsplit')<CR>
+nmap <leader>e :CocCommand explorer<CR>
 nnoremap <leader>do :call CocAction('doHover')<CR>
 
 "Maps
@@ -95,6 +96,7 @@ let g:coc_global_extensions = [
       \'coc-clangd',
       \'coc-terminal',
       \'coc-snippets',
+      \'coc-explorer'
       \]
 
 
