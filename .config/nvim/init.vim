@@ -90,7 +90,6 @@ highlight clear Tabline
 
 "Coc
 let g:coc_global_extensions = [
-      \'coc-explorer',
       \'coc-tsserver',
       \'coc-python',
       \'coc-json',
