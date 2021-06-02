@@ -71,8 +71,8 @@ nmap <leader>gv :call CocAction('jumpDefinition', 'vsplit')<CR>
 nmap <leader>e :CocCommand explorer<CR>
 nmap <leader>ff :Files<CR>
 nmap <leader>fr :Rg<CR>
-nmap <leader>fb :Blines<CR>
-nmap <leader>fb :Lines<CR>
+nmap <leader>fb :BLines<CR>
+nmap <leader>fa :Ag<CR>
 nnoremap <leader>do :call CocAction('doHover')<CR>
 nnoremap <silent> <space><space> :<C-u>CocFzfList<CR>
 
@@ -94,7 +94,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 call plug#end()
