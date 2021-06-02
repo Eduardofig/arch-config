@@ -30,6 +30,22 @@ let g:airline_theme = 'nord_minimal'
 let g:coc_snippet_next = '<tab>'
 let g:coc_snippet_prev = '<s-tab>'
 
+"Fzf
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+
 "Imaps
 imap <C-f> <Plug>(coc-snippets-expand)
 imap <C-l> <Esc>viw~ea
@@ -53,7 +69,12 @@ nmap K gT
 nmap <leader>gd :call CocAction('jumpDefinition', 'split')<CR>
 nmap <leader>gv :call CocAction('jumpDefinition', 'vsplit')<CR>
 nmap <leader>e :CocCommand explorer<CR>
+nmap <leader>ff :Files<CR>
+nmap <leader>fr :Rg<CR>
+nmap <leader>fb :Blines<CR>
+nmap <leader>fb :Lines<CR>
 nnoremap <leader>do :call CocAction('doHover')<CR>
+nnoremap <silent> <space><space> :<C-u>CocFzfList<CR>
 
 "Maps
 map <leader>h :wincmd h<CR>
@@ -73,6 +94,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'honza/vim-snippets'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
 call plug#end()
 
 "Appearance
@@ -98,5 +122,4 @@ let g:coc_global_extensions = [
       \'coc-snippets',
       \'coc-explorer'
       \]
-
 
