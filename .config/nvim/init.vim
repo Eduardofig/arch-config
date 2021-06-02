@@ -73,6 +73,7 @@ nmap <leader>ff :Files<CR>
 nmap <leader>fr :Rg<CR>
 nmap <leader>fb :BLines<CR>
 nmap <leader>fa :Ag<CR>
+nmap <leader>fi :History:<CR>
 nnoremap <leader>do :call CocAction('doHover')<CR>
 nnoremap <silent> <space><space> :<C-u>CocFzfList<CR>
 
