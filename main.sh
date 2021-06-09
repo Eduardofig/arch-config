@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "starting"
-sudo apt install neovim kitty xcape x11-xserver-utils fish npm clangd ripgrep silversearcher-ag -y
+sudo apt install neovim kitty xcape x11-xserver-utils fish npm clangd ripgrep silversearcher-ag ranger -y
 mv ~/.config ~/.config.old
 mv .config ~/.config
 xset s off
