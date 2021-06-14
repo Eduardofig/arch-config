@@ -71,7 +71,7 @@ nmap <leader>gv :call CocAction('jumpDefinition', 'vsplit')<CR>
 nmap <leader>e :CocCommand explorer<CR>
 nmap <leader>ff :Files<CR>
 nmap <leader>fr :Rg<CR>
-nmap <leader>fb :BLines<CR>
+nmap / :BLines<CR>
 nmap <leader>fa :Ag<CR>
 nmap <leader>fi :History:<CR>
 nmap <leader>fl :Lines<CR>
