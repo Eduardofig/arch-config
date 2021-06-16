@@ -75,6 +75,7 @@ nmap / :BLines<CR>
 nmap <leader>fa :Ag<CR>
 nmap <leader>fi :History:<CR>
 nmap <leader>fl :Lines<CR>
+nmap <leader>m :MaximizerToggle!<CR>
 nnoremap <leader>do :call CocAction('doHover')<CR>
 nnoremap <silent> <space><space> :<C-u>CocFzfList<CR>
 
@@ -99,6 +100,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/fzf', {'dir': '~/.fzf','do': './install --all'}
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
+Plug 'szw/vim-maximizer'
 call plug#end()
 
 "Appearance
