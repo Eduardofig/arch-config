@@ -66,6 +66,7 @@ nmap <leader>T <Plug>(coc-terminal-toggle)
 nmap <CR> o<Esc>
 nmap J gt
 nmap K gT
+nmap <leader>gt :call CocAction('jumpDefinition')<CR>
 nmap <leader>gd :call CocAction('jumpDefinition', 'split')<CR>
 nmap <leader>gv :call CocAction('jumpDefinition', 'vsplit')<CR>
 nmap <leader>e :CocCommand explorer<CR>
