@@ -15,4 +15,5 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 git config --global user.email "duzinho039@gmail.com"
 git config --global user.name "Eduardofig"
+vim +PlugInstall +qall
 echo "done"
