@@ -17,4 +17,6 @@ git config --global user.email "duzinho039@gmail.com"
 git config --global user.name "Eduardofig"
 sudo npm i -g gitmoji-cli
 vim +PlugInstall +qall
+gsettings set org.gnome.desktop.background picture-uri file:///home/serrano/Pictures/y.jpg
+gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll true
 echo "done"
