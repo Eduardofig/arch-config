@@ -11,8 +11,10 @@ xcape -e 'Control_L=Escape'
 xset s off
 xset -dpms
 xset r rate 210 40
-sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
 git config --global user.email "duzinho039@gmail.com"
 git config --global user.name "Eduardofig"
 sudo npm i -g gitmoji-cli

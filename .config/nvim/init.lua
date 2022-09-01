@@ -1,0 +1,8 @@
+require "user.luasnip_config"
+require "user.lsp_config"
+require "user.cmp_config"
+require "user.appearance"
+require "user.plugins"
+require "user.options"
+require "user.keymaps"
+require "user.rename"
