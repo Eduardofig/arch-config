@@ -11,7 +11,8 @@ vim.cmd[[hi DiagnosticVirtualTextInfo guibg=None]]
 vim.cmd[[hi DiagnosticVirtualTextError guibg=None]]
 vim.cmd[[hi DiagnosticVirtualTextWarn guibg=None]]
 vim.cmd[[hi DiagnosticVirtualTextHint guibg=None]]
-
+vim.cmd[[hi DiagnosticVirtualTextHint guibg=None]]
+vim.cmd[[hi Type guifg=#D16464]]
 
 -- treesitter_config
 require('nvim-treesitter.configs').setup({

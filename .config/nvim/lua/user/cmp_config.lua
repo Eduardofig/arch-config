@@ -60,11 +60,11 @@ cmp.setup({
             end
         end,
         ['<C-e>'] = cmp.mapping.abort(),
-        ['<Tab>'] = cmp.mapping(function(fallback)
-            if luasnip.jumpable(1) then
-                luasnip.jump(1)
-            end
-        end)
+        --['<Tab>'] = cmp.mapping(function(fallback)
+            --if luasnip.jumpable(1) then
+                --luasnip.jump(1)
+            --end
+        --end)
     }),
     sources = cmp.config.sources({
         { name = 'nvim_lsp' },

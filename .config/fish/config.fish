@@ -45,4 +45,7 @@ function fish_prompt
   printf '↪  '
   set_color normal
 end
-neofetch
+export PATH="$HOME/.cargo/bin:$PATH"
+echo ""
+clear
+cat ~/.config/.nfetch
